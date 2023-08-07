@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task2</title>
+  </head>
+  <body>
+
+  <h1>I'am a big header!!!</h1>
+  <div id="myDiv">
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+    <p>Fourth paragraph</p>
+  </div>
+  <ul id="myList">
+    <li>Make</li>
+    <li>me</li>
+    <li>horizontal!</li>
+  </ul>
+  <span>Make me invisible, please!</span>
+
+
+<script>
+// Напишіть скріпт, який за допомогою засобів DOM простилізує 
+// сторінку так як показано на картинці.
+
+
+// Стилізуємо заголовок
+let header = document.querySelector('h1');
+header.style.fontSize = '40px';
+header.style.textAlign = 'center';
+
+// Стилізуємо контейнер
+let container = document.querySelector('#myDiv');
+container.style.backgroundColor = 'lightblue';
+container.style.padding = '20px';
+
+// Стилізуємо абзаци
+let paragraphs = document.querySelectorAll('p');
+paragraphs.forEach(paragraph => {
+  paragraph.style.fontWeight = 'bold';
+  paragraph.style.color = 'darkblue';
+});
+
+// Стилізуємо список
+let list = document.querySelector('#myList');
+list.style.display = 'flex';
+list.style.justifyContent = 'space-around';
+list.style.listStyleType = 'none';
+list.style.marginBottom = '20px';
+
+// Стилізуємо невидимий елемент
+let invisibleElement = document.querySelector('span');
+invisibleElement.style.visibility = 'hidden';
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+
+</head>
+
+<body>
+
+    <ul class id="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <script>
+// На HTML-сторінці є ненумерований список з id="list", який складається із 5 елементів. 
+// У модальному вікні необхідно послідовно вивести вміст:
+//      1) першого елемента списку
+//      2) останнього елемента списку
+//      3) другого елемента списку
+//      4) четвертого елемента списку
+//      5) третього елемента списку
+// Приклад:
+// •        1
+// •        2
+// •        3
+// •        4
+// •        5
+// Результат виводу: 1, 5, 2, 4, 3
+//===============================
+
+let listItems = document.querySelectorAll("#list li");
+
+let firstItem = listItems[0].textContent;
+let lastItem = listItems[listItems.length - 1].textContent;
+let secondItem = listItems[1].textContent;
+let fourthItem = listItems[3].textContent;
+let thirdItem = listItems[2].textContent;
+
+let result = firstItem + ", " + lastItem + ", " + secondItem + ", " + fourthItem + ", " + thirdItem;
+
+alert(result);
+
+    </script>
+</body>
+
+</html>
